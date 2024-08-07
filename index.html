@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-icons-1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/styleModal.css">
+    <title>Portfólio | Augusto C. Bendlin</title>
+</head>
+<body>
+    <header>
+        <div class="interface">
+            <div class="logo">
+                <b>Bem-vindo!</b>
+            </div>
+
+            <nav class="menu-navegacao">
+                <ul>
+                    <li><a href="#secao-apresentacao">INÍCIO</a></li>
+                    <li><a href="#secao-especialidades">ESPECIALIDADES</a></li>
+                    <!-- <li><a href="">SOBRE</a></li> -->
+                    <li><a href="#secao-portfolio">PROJETOS</a></li>
+                </ul>
+            </nav>
+
+            <div class="btn-contato">
+                <a href="#secao-contato">
+                    <button>Contato</button>
+                </a>
+            </div>
+
+            <div class="btn-abrir-menu" onclick="abrirMenuMobile();">
+                <i class="bi bi-list"></i>
+            </div>
+
+            <div class="menu-mobile" id="menu-mobile">
+                <div class="btn-fechar">
+                    <i class="bi bi-x-circle" onclick="fecharMenuMobile();"></i>
+                </div>
+
+                <nav>
+                    <ul>
+                        <li><a href="#secao-apresentacao">Início</a></li>
+                        <li><a href="#secao-especialidades">Especialidades</a></li>
+                        <!-- <li><a href="">Sobre</a></li> -->
+                        <li><a href="#secao-portfolio">Projetos</a></li>
+                        <li><a href="#secao-contato">Contato</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="overlay-menu" id="overlay-menu" onclick="fecharMenuMobile();"></div>
+        </div>
+    </header>
+
+    <main>
+        <section class="apresentacao" id="secao-apresentacao">
+            <div class="interface">
+                <div class="img-apresentacao flex">
+                    <img src="assets/img/minhaImagem.jpg" alt="">
+                </div>
+                <div class="flex">
+                    <div class="txt-apresentacao">
+                        <h2>Muito prazer, <span>me chamo Augusto Bendlin.</span></h2>
+                        <p>
+                            Desenvolvedor full stack atuando há 3 anos, formado em Sistemas de Informação pelo Instituto Federal Catarinense.
+                            Atualmente estou me especializando na programação orientada a objetos, e também me aprimorando no desenvolvimento front-end, sempre visando desenvolver soluções eficientes e me desafiando ainda mais.
+                        </p>
+                        
+                        <div class="btn-social">
+                            <a href="https://www.linkedin.com/in/augusto-bendlin/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                            <a href="https://www.instagram.com/augusto_bendlin/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                            <a href="https://github.com/AugustoBendlin" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="especialidades" id="secao-especialidades">
+            <div class="interface">
+                <h2 class="titulo">Minhas <span>especialidades.</span></h2>
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-mortarboard"></i>
+                        <h3>Formação</h3>
+                        <p>Sou Bacharel em Sistemas de Informação pelo Instituto Federal Catarinense, aplicando meus conhecimentos adiquiridos nesta graduação.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-php"></i>
+                        <h3>PHP</h3>
+                        <p>Tenho 3 anos de experiência na linguagem de programação PHP, atuando no desenvolvimento de novos recursos e manutenções.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-js"></i>
+                        <h3>JavaScript</h3>
+                        <p>Junto da linguagem PHP, atuei também por 3 anos em melhorias e manutenções de código envolvendo a linguagem JavaScript.</p>
+                    </div>
+
+                </div>
+                
+                <div class="flex">
+                    <div class="especialidades-box">
+                        <i class="bi bi-filetype-sql"></i>
+                        <h3>MySQL</h3>
+                        <p>Trabalho há 3 anos com o sistema de gerenciamento de banco MySQL, desenvolvendo consultas de alto padrão e otimizadas.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-github"></i>
+                        <h3>GitHub</h3>
+                        <p>Experiência com a plataforma GitHub, hospedando códigos, realizando reviews e documentação, além do versionamento de código.</p>
+                    </div>
+
+                    <div class="especialidades-box">
+                        <i class="bi bi-house"></i>
+                        <h3>Home Office</h3>
+                        <p>Possuo 3 anos de experiência trabalhando no formato híbrido, alternando entre casa e o escritório, mantendo o foco e a qualidade de entrega.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="portfolio" id="secao-portfolio">
+            <div class="interface">
+                <h2 class="titulo">Meu <span>portfólio.</span></h2>
+                <div class="flex">
+                    <div class="img-port" style="background-image: url(assets/img/ultraVoiceBeta.jpg);">
+                        <div class="overlay">
+                            <h3>Ultra Voice Beta</h3>
+                            <h4 class="btn-overlay" id="ver-mais-ultra-voice">Ver Mais<i class="bi bi-eye"></i></h4>
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(assets/img/emBreve.jpg);">
+                        <div class="overlay">
+                            <h3>Em Breve</h3>
+                            <!-- <h4 class="btn-overlay">Ver Mais<i class="bi bi-eye"></i></h4> -->
+                        </div>
+                    </div>
+                    <div class="img-port" style="background-image: url(assets/img/emBreve.jpg);">
+                        <div class="overlay">
+                            <h3>Em Breve</h3>
+                            <!-- <h4 class="btn-overlay">Ver Mais<i class="bi bi-eye"></i></h4> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="formulario" id="secao-contato">
+            <div class="interface">
+                <h2 class="titulo">Entre em <span>contato.</span></h2>
+
+                <form action="">
+                    <input type="text" name="" id="" placeholder="Seu nome completo" required>
+                    <input type="text" name="" id="" placeholder="Seu e-mail" required>
+                    <input type="text" name="" id="" placeholder="Seu celular">
+                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                    <div class="btn-enviar">
+                        <input type="submit" value="Enviar">
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="interface">
+            <div class="line-footer">
+                <div class="flex">
+                    <div class="logo-footer">
+                        <p><b>Augusto de Carvalho Bendlin</b></p>
+                    </div>
+                    <div class="btn-social">
+                        <a href="https://www.linkedin.com/in/augusto-bendlin/" target="_blank"><button><i class="bi bi-linkedin"></i></button></a>
+                        <a href="https://www.instagram.com/augusto_bendlin/" target="_blank"><button><i class="bi bi-instagram"></i></button></a>
+                        <a href="https://github.com/AugustoBendlin" target="_blank"><button><i class="bi bi-github"></i></button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="line-footer borda">
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:contato@augusto.com.br">contato@augusto.com.br</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-ultra-voice" class="modal">
+        <div class="modal-conteudo">
+            <span class="modal-fechar">&times;</span>
+            <div class="modal-cabecalho">
+                <h2>Sobre o Projeto <span>Ultra Voice.</span></h2>
+            </div>
+            <div class="modal-corpo">
+                <p>
+                    Projeto que possibilita realizar o preenchimento dos dados de um formulário
+                    através do reconhecimento de voz, em conjunto com do sintetizador de fala
+                    para orientar no preenchimento destes campos.
+                </p>
+                <p>
+                    O projeto segue em Beta, sendo testado e aprimorado constantemente, logo possíveis bugs
+                    podem ocorrer. Se encontrar algo de errado, não hesite em comunicar.
+                </p>
+            </div>
+            <div class="modal-rodape">
+                <a href="https://github.com/AugustoBendlin/webSpeechTest" target="_blank"><button>Ver Projeto no GitHub<i class="bi bi-github"></i></button></a>
+                <a href="https://github.com/AugustoBendlin" target="_blank"><button>Ver Projeto em Funcionamento<i class="bi bi-window"></i></button></a>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/menu.js" defer></script>
+    <script src="assets/js/modal.js" defer></script>
+</body>
+</html>

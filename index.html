@@ -158,14 +158,17 @@
             <div class="interface">
                 <h2 class="titulo">Entre em <span>contato.</span></h2>
 
-                <form action="">
-                    <input type="text" name="" id="" placeholder="Seu nome completo" required>
-                    <input type="text" name="" id="" placeholder="Seu e-mail" required>
-                    <input type="text" name="" id="" placeholder="Seu celular">
-                    <textarea name="" id="" placeholder="Sua mensagem" required></textarea>
+                <form action="https://formsubmit.co/e95395dc901096c7a79d2bbb827ef81a" method="POST">
+                    <input type="text" name="Nome" placeholder="Seu nome completo" required>
+                    <input type="email" name="E-mail" placeholder="Seu e-mail" required>
+                    <input type="tel" name="Telefone" placeholder="Seu celular" maxlength="15" onkeyup="validaTelefone(event)">
+                    <textarea name="Mensagem" placeholder="Sua mensagem" required></textarea>
                     <div class="btn-enviar">
                         <input type="submit" value="Enviar">
                     </div>
+
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_next" value="https://augustobendlin.github.io/">
                 </form>
             </div>
         </section>
@@ -186,7 +189,7 @@
                 </div>
             </div>
             <div class="line-footer borda">
-                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:contato@augusto.com.br">contato@augusto.com.br</a></p>
+                <p><i class="bi bi-envelope-fill"></i> <a href="mailto:augusto.bendlin1997@gmail.com">augusto.bendlin1997@gmail.com</a></p>
             </div>
         </div>
     </footer>
@@ -217,5 +220,6 @@
 
     <script src="assets/js/menu.js" defer></script>
     <script src="assets/js/modal.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
 </body>
 </html>

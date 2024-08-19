@@ -167,7 +167,6 @@ header nav.menu-navegacao ul li {
 /* Estilo do Apresentação */
 section.apresentacao {
     padding: 80px 15%;
-    height: 100vh;
 }
 
 .apresentacao .interface {
@@ -234,13 +233,17 @@ section.apresentacao {
 section.especialidades {
     margin-bottom: 5%;
     padding-top: 25px;
-    box-shadow: 0 -20px 40px -5px rgb(40, 40, 46);
 }
 
 section.especialidades .flex {
+    margin-top: 30px;
     gap: 60px;
     align-items: center;
     justify-content: center;
+}
+
+.especialidades .interface {
+    margin-top: 50px;
 }
 
 .especialidades .especialidades-box {
@@ -278,17 +281,11 @@ section.especialidades .flex {
 /* Estilo do Portfólio */
 section.portfolio {
     padding: 80px 4%;
-    height: 100vh;
-    box-shadow: 0 0 40px 10px rgb(40, 40, 46);
 }
 
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
-}
-
-.portfolio .interface {
-    margin-top: 4%;
 }
 
 .img-port {
@@ -349,6 +346,7 @@ section.portfolio .flex {
 /* Estilo do Formulário de Contrato */
 section.formulario {
     padding: 80px 4%;
+    margin-bottom: 30px;
 }
 
 form {
@@ -527,6 +525,10 @@ footer .line-footer p a {
         gap: 40px;
         align-items: center;
         justify-content: center;
+    }
+    
+    .overlay {
+        opacity: 1;
     }
 
     /* Estilo do Rodapé */

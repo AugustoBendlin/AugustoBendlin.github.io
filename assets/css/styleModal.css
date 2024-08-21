@@ -15,7 +15,7 @@
 .modal-conteudo {
     position: relative;
     margin: auto;
-    top: 30%;
+    top: 18%;
     padding: 0;
     width: 670px;
     height: 400px;
@@ -112,7 +112,7 @@
     }
 
     to {
-        top: 30%;
+        top: 18%;
         opacity: 1
     }
 }
@@ -122,7 +122,6 @@
     .modal-conteudo {
         height: 470px;
         max-width: 370px;
-        top: 20%;
     }
 
     /* Cabeçalho */
@@ -154,6 +153,12 @@
     .modal-rodape i {
         font-size: 12px;
     }
+}
+
+@media screen and (max-height: 600px) {
+    .modal-conteudo {
+        top: 10%;
+    }
 
     @keyframes animatetop {
         from {
@@ -162,7 +167,7 @@
         }
     
         to {
-            top: 20%;
+            top: 10%;
             opacity: 1
         }
     }

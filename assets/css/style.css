@@ -30,7 +30,7 @@ body {
 }
 
 .btn-contato button {
-    padding: 10px 40px;
+    padding: 10px 30px;
     font-size: 18px;
     font-weight: 600;
     color: rgb(100, 149, 237);
@@ -237,7 +237,7 @@ section.especialidades {
 
 section.especialidades .flex {
     margin-top: 30px;
-    gap: 60px;
+    gap: 45px;
     align-items: center;
     justify-content: center;
 }
@@ -246,13 +246,17 @@ section.especialidades .flex {
     margin-top: 50px;
 }
 
+.especialidades .interface .titulo {
+    margin-bottom: 60px;
+}
+
 .especialidades .especialidades-box {
     color: rgb(240, 255, 255);
-    width: 400px;
-    height: 350px;
+    width: 380px;
+    height: 320px;
     padding: 40px;
     border: 2px solid rgba(100, 148, 237, 0.500);
-    margin-top: 45px;
+    margin-top: 20px;
     border-radius: 20px;
     transition: .2s;
 }
@@ -265,7 +269,7 @@ section.especialidades .flex {
 .especialidades .especialidades-box i {
     display: flex;
     justify-content: center;
-    font-size: 60px;
+    font-size: 50px;
     color: rgb(100, 149, 237);
 }
 
@@ -286,6 +290,10 @@ section.portfolio {
 section.portfolio .flex {
     justify-content: space-around;
     margin-top: 60px;
+}
+
+.portfolio .interface .titulo {
+    margin-bottom: 80px;
 }
 
 .img-port {
@@ -386,11 +394,13 @@ form .btn-enviar {
 
 form .btn-enviar input {
     width: 120px;
+    padding: 10px;
+    font-weight: 600;
+    border-radius: 30px;
     background-color: rgb(28, 28, 32);
     color: rgb(100, 149, 237);
     border: 2px solid rgb(100, 149, 237);
     cursor: pointer;
-    transition: .2s;
 }
 
 /* Estilo do Rodapé */
